@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPulse • Notícias Sustentáveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>EcoPulse</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#">Urbanismo</a></li>
+                    <li><a href="#">Clima</a></li>
+                    <li><a href="#">Economia Verde</a></li>
+                    <li><a href="#">Tecnologia</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+
+                <!-- Actions -->
+                <div class="nav-actions">
+                    <button id="search-btn" class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button id="theme-toggle" class="icon-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn-primary">Assine</button>
+
+                    <!-- Hamburger -->
+                    <button id="hamburger" class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Destaque</div>
+                <h1 class="hero-title">Urbanização acelera demanda por produção sustentável</h1>
+                <p class="hero-excerpt">Cidades concentram mais de 56% da população mundial e devem chegar a 68% até 2050. Como isso impacta o futuro do planeta?</p>
+                <div class="hero-meta">
+                    <span>Por EcoPulse • 10 Jun 2026</span>
+                    <span class="hero-category">Sustentabilidade</span>
+                </div>
+                <button class="btn-primary hero-btn">Ler matéria completa</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://picsum.photos/id/1015/2000/1200" alt="Cidade sustentável">
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main container">
+        <div class="content-grid">
+            <!-- NEWS FEED -->
+            <section class="news-feed">
+                <div class="section-header">
+                    <h2>Últimas Notícias</h2>
+                    <a href="#" class="see-all">Ver todas <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="news-grid" id="news-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <!-- Trending -->
+                <div class="sidebar-card">
+                    <h3><i class="fas fa-fire"></i> Em Alta</h3>
+                    <ul class="trending-list" id="trending-list">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sidebar-card newsletter">
+                    <h3>Fique por dentro</h3>
+                    <p>Receba as principais notícias sobre sustentabilidade no seu e-mail.</p>
+                    <input type="email" placeholder="Seu melhor email" id="newsletter-email">
+                    <button onclick="subscribeNewsletter()" class="btn-primary w-full">Inscrever-se</button>
+                </div>
+
+                <!-- Quick Categories -->
+                <div class="sidebar-card">
+                    <h3>Categorias</h3>
+                    <div class="category-tags">
+                        <span class="tag">Agricultura Urbana</span>
+                        <span class="tag">Energia Renovável</span>
+                        <span class="tag">Economia Circular</span>
+                        <span class="tag">Biodiversidade</span>
+                        <span class="tag">Mobilidade Verde</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoPulse</span>
+                    </div>
+                    <p> Jornalismo independente sobre sustentabilidade, urbanismo e o futuro do planeta.</p>
+                </div>
+                <div>
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="#">Últimas</a></li>
+                        <li><a href="#">Reportagens</a></li>
+                        <li><a href="#">Análises</a></li>
+                        <li><a href="#">Opinião</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Equipe</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Ética</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EcoPulse. Todos os direitos reservados.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
